@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decida seu Voto</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header class="bg-light py-3" role="banner">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light" aria-label="Primary navigation">
                 <a class="navbar-brand" href="index.html">
-                    <img src="logo.png" alt="Logo do Decida seu Voto">
+                    <img src="assets/img/logo.png" alt="Logotipo do Decida seu Voto">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,6 +26,11 @@
                         <li class="nav-item"><a class="nav-link" href="compare.html">Comparativo</a></li>
                     </ul>
                 </div>
+                <div class="navbar-search">
+                    <label for="navbarSearch" class="sr-only">Pesquisar</label>
+                    <input type="text" id="navbarSearch" class="form-control" placeholder="Pesquisa" aria-label="Pesquisa">
+                    <button type="button"><i class="fas fa-search" aria-hidden="true"></i><span class="sr-only">Pesquisar</span></button>
+                </div>
             </nav>
         </div>
     </header>
@@ -33,7 +39,7 @@
         <!-- conteudo -->
     </main>
 
-<footer class="footer text-center" role="contentinfo">
+    <footer class="footer text-center" role="contentinfo">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-left">
@@ -71,6 +77,7 @@
                 <div class="col-md-12 newsletter">
                     <h5>Assine nossa newsletter</h5>
                     <form class="form-inline justify-content-center">
+                        <label for="newsletterEmail" class="sr-only">Email</label>
                         <input type="email" class="form-control mb-2 mr-sm-2" id="newsletterEmail" placeholder="Email">
                         <button type="submit" class="btn btn-primary mb-2">Submit</button>
                     </form>
@@ -79,13 +86,13 @@
             <div class="row mt-4">
                 <div class="col-md-12">
                     <div class="footer-logo">
-                        <img src="logo.png" alt="Logo do Decida seu Voto">
+                        <img src="assets/img/logotipo.png" alt="Logotipo do Decida seu Voto">
                     </div>
                     <div class="social-icons mt-3">
-                        <a href="#"><img src="icon-facebook.png" alt="Facebook" class="logo"></a>
-                        <a href="#"><img src="icon-youtube.png" alt="YouTube" class="logo"></a>
-                        <a href="#"><img src="icon-instagram.png" alt="Instagram" class="logo"></a>
-                        <a href="#"><img src="icon-linkedin.png" alt="LinkedIn" class="logo"></a>
+                        <a href="#"><i class="fab fa-facebook fa-2x logo" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+                        <a href="#"><i class="fab fa-youtube fa-2x logo" aria-hidden="true"></i><span class="sr-only">YouTube</span></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x logo" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+                        <a href="#"><i class="fab fa-linkedin fa-2x logo" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
                     </div>
                 </div>
             </div>
@@ -95,5 +102,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
