@@ -104,6 +104,18 @@
 .btn-group .btn {
     margin-right: 5px;
 }
+.carousel-item {
+    height: 65vh; /* Ajuste a altura conforme necessário */
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
 
 
 
