@@ -95,65 +95,48 @@
 .navbar-search button i {
     color: #aaa;
 }
+.candidate-card .media {
+    display: flex;
+    flex-wrap: wrap;
+}
 .candidate-card img {
     max-width: 100px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.candidate-card .media-body {
+    flex: 1;
 }
 .candidate-card .btn-group {
     margin-top: 10px;
 }
 .btn-group .btn {
     margin-right: 5px;
+    margin-bottom: 5px;
+    flex: 1;
+}
+@media (max-width: 576px) {
+    .candidate-card img {
+        max-width: 100%;
+        height: auto;
+    }
+    .candidate-card .btn-group {
+        display: flex;
+        flex-direction: column;
+    }
 }
 .carousel-item {
-    height: 65vh; /* Ajuste a altura conforme necessário */
+    height: 65vh;
     min-height: 300px;
     background: no-repeat center center scroll;
     background-size: cover;
 }
-
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1rem;
     border-radius: 0.5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .input-group {
     display: flex;
     margin-bottom: 10px;
@@ -176,7 +159,7 @@
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.imagem-cadidato{
+.imagem-cadidato {
     width: 100px;
     height: 100px;
     border: 1px solid #ccc;
