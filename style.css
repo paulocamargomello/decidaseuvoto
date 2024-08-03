@@ -32,3 +32,81 @@
     max-width: 400px;
     margin: 20px auto;
 }
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.search-box {
+    border-radius: 50px;
+    background-color: #f3edf7;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.search-box input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    padding: 5px 10px;
+}
+.search-box input::placeholder {
+    color: #aaa;
+}
+.search-box button {
+    border: none;
+    background: none;
+    outline: none;
+}
+.search-box button i {
+    color: #aaa;
+}
+.search-title {
+    margin-bottom: 10px;
+    color: #aaa;
+}
+.navbar-search {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #f3edf7;
+    padding: 5px 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-left: auto;
+}
+.navbar-search input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 200px;
+}
+.navbar-search input::placeholder {
+    color: #aaa;
+}
+.navbar-search button {
+    border: none;
+    background: none;
+    outline: none;
+}
+.navbar-search button i {
+    color: #aaa;
+}
+.candidate-card {
+    margin-bottom: 20px;
+}
+.candidate-card img {
+    max-width: 100px;
+}
+.candidate-card .btn-group {
+    margin-top: 10px;
+}
+.section-heading {
+    margin-bottom: 30px;
+}
+.btn-group .btn {
+    margin-right: 5px;
+}

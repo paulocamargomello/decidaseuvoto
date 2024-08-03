@@ -11,8 +11,8 @@
     <header class="bg-light py-3" role="banner">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light" aria-label="Primary navigation">
-                <a class="navbar-brand" href="#">
-                    <img src="logo.png" alt="Logo do Decida seu Voto">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="O logotipo é composto por um ícone azul e branco com um design simples e minimalista. No centro, há uma marca de seleção (checkmark) estilizada em branco, indicando aprovação ou escolha, sobre um fundo azul. Atrás da marca de seleção, há uma silhueta estilizada de edifícios, representando um cenário urbano, sugerindo que o logotipo está relacionado a assuntos municipais. Acima dos edifícios, há duas estrelas, uma maior e outra menor, também em branco, simbolizando qualidade e excelência. O design é neutro e sério, refletindo confiança e clareza, adequado para o tema de eleições municipais.">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,59 +22,138 @@
                         <li class="nav-item"><a class="nav-link" href="#">Vereadores</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Prefeito</a></li>
                         <li class="nav-item"><a class="nav-link" href="cola.html">Cola</a></li>
-                        <li class="nav-item"><a class="nav-link" href="compare.html">Comparativo</a></li>
-						<li class="nav-item"><a class="nav-link" href="compare.html">Comparativo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="compare.html">Comparativo</a></li>						
                     </ul>
                 </div>
+				<div class="navbar-search">
+                        <input type="text" class="form-control" placeholder="Pesquisa" aria-label="Pesquisa">
+                        <button type="button"><i class="fas fa-search"></i></button>
+                    </div>
             </nav>
         </div>
     </header>
 
     <main class="container mt-4" role="main">
-        <div class="text-center">
-            <h1 class="main-heading">Escolha sua localização</h1>
-            <label for="locationInput" class="sr-only">Escolha sua localização</label>
-            <input type="text" id="locationInput" class="form-control my-3" placeholder="São Carlos/SP" aria-label="Localização">
-        </div>
+		<div class="container search-container">
+			<h2 class="search-title">Escolha sua localização</h2>
+			<div class="search-box">
+				<input type="text" class="form-control" placeholder="São Carlos/SP" aria-label="Localização">
+				<button type="button"><i class="fas fa-search"></i></button>
+			</div>
+		</div>
 
         <section aria-labelledby="prefeitosHeading">
             <h2 id="prefeitosHeading" class="section-heading">Prefeitos</h2>
-            <div class="row">
-                <div class="col-md-4 candidate-card">
-                    <div class="card">
-                        <img src="prefeito1.jpg" class="card-img-top" alt="Foto do candidato Dario Saadi">
-                        <div class="card-body">
-                            <h5 class="card-title">Dario Saadi - 01</h5>
-                            <p class="card-text">Partido dos Scrum Mater</p>
-                            <a href="#" class="btn btn-primary" role="button" aria-pressed="false">Favoritar</a>
-                            <a href="#" class="btn btn-secondary" role="button" aria-pressed="false">Detalhes</a>
-                            <a href="#" class="btn btn-info" role="button" aria-pressed="false">Cola</a>
-                            <a href="#" class="btn btn-success" role="button" aria-pressed="false">Comparar</a>
+            <p>Conheça os candidatos a prefeito da sua localização.</p>
+            <div class="card candidate-card">
+                <div class="card-body">
+                    <div class="media">
+                        <img src="dario_saadi.jpg" class="mr-3" alt="Foto do candidato Dario Saadi">
+                        <div class="media-body">
+                            <h5 class="mt-0">Dario Saadi - 01 - Partido dos Scrum Mater</h5>
+                            <p>Médico Urologista, conhecido por sua atuação na cidade de Campinas. Sua carreira política começou como suplente de vereador em 1995 e, desde então, teve uma trajetória marcante no cenário político local, sendo que é o atual prefeito da cidade de Campinas.</p>
+                            <div class="btn-group" role="group" aria-label="Ações para Dario Saadi">
+                                <button type="button" class="btn btn-primary">Favoritar</button>
+                                <button type="button" class="btn btn-secondary">Detalhes</button>
+                                <button type="button" class="btn btn-info">Cola</button>
+                                <button type="button" class="btn btn-success">Comparar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Mais cards de prefeitos -->
             </div>
+            <div class="card candidate-card">
+                <div class="card-body">
+                    <div class="media">
+                        <img src="rafa_zinbaldi.jpg" class="mr-3" alt="Foto do candidato Rafa Zinbaldi">
+                        <div class="media-body">
+                            <h5 class="mt-0">Rafa Zinbaldi - 02 - Partido dos Programadores</h5>
+                            <p>Foi vereador de Campinas por quatro mandatos e por duas vezes presidiu a câmara municipal. Em 2018, foi eleito deputado estadual por São Paulo com 80.789 votos.</p>
+                            <div class="btn-group" role="group" aria-label="Ações para Rafa Zinbaldi">
+                                <button type="button" class="btn btn-primary">Favoritar</button>
+                                <button type="button" class="btn btn-secondary">Detalhes</button>
+                                <button type="button" class="btn btn-info">Cola</button>
+                                <button type="button" class="btn btn-success">Comparar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card candidate-card">
+                <div class="card-body">
+                    <div class="media">
+                        <img src="edinho_silva.jpg" class="mr-3" alt="Foto do candidato Edinho Silva">
+                        <div class="media-body">
+                            <h5 class="mt-0">Edinho Silva - 03 - Partido Liderança</h5>
+                            <p>Apresentou projeto de lei complementar que concede redução de até 50% na tarifa do transporte coletivo urbano municipal aos estudantes de cursinhos populares de pré-vestibular e pré-técnico em regime integralmente presencial.</p>
+                            <div class="btn-group" role="group" aria-label="Ações para Edinho Silva">
+                                <button type="button" class="btn btn-primary">Favoritar</button>
+                                <button type="button" class="btn btn-secondary">Detalhes</button>
+                                <button type="button" class="btn btn-info">Cola</button>
+                                <button type="button" class="btn btn-success">Comparar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-primary btn-block">Mais prefeitos</button>
         </section>
 
         <section aria-labelledby="vereadoresHeading">
-            <h2 id="vereadoresHeading" class="section-heading">Vereadores</h2>
-            <div class="row">
-                <div class="col-md-4 candidate-card">
-                    <div class="card">
-                        <img src="vereador1.jpg" class="card-img-top" alt="Foto da candidata Mariana Conti">
-                        <div class="card-body">
-                            <h5 class="card-title">Mariana Conti - 00001</h5>
-                            <p class="card-text">Partido dos Scrum Mater</p>
-                            <a href="#" class="btn btn-primary" role="button" aria-pressed="false">Favoritar</a>
-                            <a href="#" class="btn btn-secondary" role="button" aria-pressed="false">Detalhes</a>
-                            <a href="#" class="btn btn-info" role="button" aria-pressed="false">Cola</a>
-                            <a href="#" class="btn btn-success" role="button" aria-pressed="false">Comparar</a>
+            <h2 id="prefeitosHeading" class="section-heading">Vereadores</h2>
+            <p>Conheça os candidatos a vereador da sua localização.</p>
+            <div class="card candidate-card">
+                <div class="card-body">
+                    <div class="media">
+                        <img src="dario_saadi.jpg" class="mr-3" alt="Foto do candidato Dario Saadi">
+                        <div class="media-body">
+                            <h5 class="mt-0">Marina Conti - 01123 - Partido dos Scrum Mater</h5>
+                            <p>Vereadora mais votada de campinas, é feminista, ativistas do movimento em defesa da diversidade sexual, em defesa dos direitos humanos e é filiada ao partido dos Scrum Master Social</p>
+                            <div class="btn-group" role="group" aria-label="Ações para Dario Saadi">
+                                <button type="button" class="btn btn-primary">Favoritar</button>
+                                <button type="button" class="btn btn-secondary">Detalhes</button>
+                                <button type="button" class="btn btn-info">Cola</button>
+                                <button type="button" class="btn btn-success">Comparar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Mais cards de vereadores -->
             </div>
+            <div class="card candidate-card">
+                <div class="card-body">
+                    <div class="media">
+                        <img src="rafa_zinbaldi.jpg" class="mr-3" alt="Foto do candidato Rafa Zinbaldi">
+                        <div class="media-body">
+                            <h5 class="mt-0">Higor Campo Grande - 02123 - Partido dos Programadores</h5>
+                            <p>Concorrendo ao seu segundo mandato, o vereador tem como nome publico Higor Campo Grande, é Higor Diego Ralha. O Vereador foi eleito pelo povo com 7670 (sete mil e seiscentos e setenta) votos) votos </p>
+                            <div class="btn-group" role="group" aria-label="Ações para Rafa Zinbaldi">
+                                <button type="button" class="btn btn-primary">Favoritar</button>
+                                <button type="button" class="btn btn-secondary">Detalhes</button>
+                                <button type="button" class="btn btn-info">Cola</button>
+                                <button type="button" class="btn btn-success">Comparar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card candidate-card">
+                <div class="card-body">
+                    <div class="media">
+                        <img src="edinho_silva.jpg" class="mr-3" alt="Foto do candidato Edinho Silva">
+                        <div class="media-body">
+                            <h5 class="mt-0">Fernando Mendes - 03123 - Partido Liderança</h5>
+                            <p>Radialista e empresário do setor de rádio de TV, Fernando está buscando sua primeira eleição. Defende a bandeira ficticia de Deus, Pátria e Familia mas é um grande corrupto que usa suas ferramentas para destruir concorrentes.</p>
+                            <div class="btn-group" role="group" aria-label="Ações para Edinho Silva">
+                                <button type="button" class="btn btn-primary">Favoritar</button>
+                                <button type="button" class="btn btn-secondary">Detalhes</button>
+                                <button type="button" class="btn btn-info">Cola</button>
+                                <button type="button" class="btn btn-success">Comparar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-primary btn-block">Mais Vereadores</button>
         </section>
     </main>
 
@@ -140,5 +219,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
