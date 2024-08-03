@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decida seu Voto</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .candidate-card {
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .navbar-brand img {
+            width: 50px;
+        }
+        .form-control {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .main-heading, .section-heading {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-light py-3" role="banner">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light" aria-label="Primary navigation">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="Logo do Decida seu Voto">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Vereadores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Prefeito</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cola</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Comparativo</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-4" role="main">
+        <div class="text-center">
+            <h1 class="main-heading">Escolha sua localização</h1>
+            <label for="locationInput" class="sr-only">Escolha sua localização</label>
+            <input type="text" id="locationInput" class="form-control my-3" placeholder="São Carlos/SP" aria-label="Localização">
+        </div>
+
+        <section aria-labelledby="prefeitosHeading">
+            <h2 id="prefeitosHeading" class="section-heading">Prefeitos</h2>
+            <div class="row">
+                <div class="col-md-4 candidate-card">
+                    <div class="card">
+                        <img src="prefeito1.jpg" class="card-img-top" alt="Foto do candidato Dario Saadi">
+                        <div class="card-body">
+                            <h5 class="card-title">Dario Saadi - 01</h5>
+                            <p class="card-text">Partido dos Scrum Mater</p>
+                            <a href="#" class="btn btn-primary" role="button" aria-pressed="false">Favoritar</a>
+                            <a href="#" class="btn btn-secondary" role="button" aria-pressed="false">Detalhes</a>
+                            <a href="#" class="btn btn-info" role="button" aria-pressed="false">Cola</a>
+                            <a href="#" class="btn btn-success" role="button" aria-pressed="false">Comparar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mais cards de prefeitos -->
+            </div>
+        </section>
+
+        <section aria-labelledby="vereadoresHeading">
+            <h2 id="vereadoresHeading" class="section-heading">Vereadores</h2>
+            <div class="row">
+                <div class="col-md-4 candidate-card">
+                    <div class="card">
+                        <img src="vereador1.jpg" class="card-img-top" alt="Foto da candidata Mariana Conti">
+                        <div class="card-body">
+                            <h5 class="card-title">Mariana Conti - 00001</h5>
+                            <p class="card-text">Partido dos Scrum Mater</p>
+                            <a href="#" class="btn btn-primary" role="button" aria-pressed="false">Favoritar</a>
+                            <a href="#" class="btn btn-secondary" role="button" aria-pressed="false">Detalhes</a>
+                            <a href="#" class="btn btn-info" role="button" aria-pressed="false">Cola</a>
+                            <a href="#" class="btn btn-success" role="button" aria-pressed="false">Comparar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mais cards de vereadores -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-center" role="contentinfo">
+        <div class="container">
+            <p class="m-0">Decida seu Voto</p>
+            <p class="m-0">Quem somos</p>
+            <p class="m-0">Body text for your whole article or post...</p>
+            <!-- Outros links e informações -->
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

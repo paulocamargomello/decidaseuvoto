@@ -1,0 +1,17 @@
+.candidate-card {
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .navbar-brand img {
+            width: 50px;
+        }
+        .form-control {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .main-heading, .section-heading {
+            margin-bottom: 30px;
+        }
